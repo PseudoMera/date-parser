@@ -10,11 +10,15 @@ Utility to help you transform your dates into a comprehensive format.
 ### How to use it
 1. We import the package
 ```import PseudoDateParser from "@pseudomera/date-parser/dist/dateParser"```
+
 2. We can pass a number, date or a valid date string (e.g an ISO string)
 
     ```const parsedDate = PseudoDateParser(new Date())```
+
     ```const parsedNumber = PseudoDateParser(2)```
+    
     ```const parsedISOString = PseudoDateParser("2007-03-01T13:00:00Z")```
+    
 3. We use our parsed data!
 ```
     console.log(
