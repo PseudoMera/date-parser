@@ -5,22 +5,31 @@ Utility to help you transform your dates into a comprehensive format.
 ## Getting Started
 
 ### Installing
-```npm i @pseudomera/date-parser```
+```bash
+$ npm i @pseudomera/date-parser
+```
 
 ### How to use it
 1. We import the package
-```import PseudoDateParser from "@pseudomera/date-parser/dist/dateParser"```
+```javascript
+import PseudoDateParser from "@pseudomera/date-parser/dist/dateParser"
+```
 
 2. We can pass a number, date or a valid date string (e.g an ISO string)
 
-    ```const parsedDate = PseudoDateParser(new Date())```
+    ```javascript
 
-    ```const parsedNumber = PseudoDateParser(2)```
+    const parsedDate = PseudoDateParser(new Date())
+
+    const parsedNumber = PseudoDateParser(2)
     
-    ```const parsedISOString = PseudoDateParser("2007-03-01T13:00:00Z")```
+    const parsedISOString = PseudoDateParser("2007-03-01T13:00:00Z")
+
+    ```
     
 3. We use our parsed data!
-```
+```javascript
+
     console.log(
     `${parsedDate.dayOfTheWeek} ${parsedDate.monthNumber} ${parsedDate.month} ${parsedDate.year}`
     );
@@ -33,6 +42,23 @@ Utility to help you transform your dates into a comprehensive format.
     `${parsedISOString.dayOfTheWeek} ${parsedISOString.monthNumber} ${parsedISOString.month} ${parsedISOString.year}`
     );
 ```
+
+### Available properties
+
+```typescript
+  day: string;
+  month: string;
+  year: string;
+  dayOfTheWeek: string;
+  hour: string;
+  minutes: string;
+  seconds: string;
+  miliseconds: string;
+  amOrPm: string;
+  monthNumber: string;
+  monthShort: string;
+```
+
 ## Built With
 
 * [date-fns](https://date-fns.org/) - Modern Javascript date utility library
