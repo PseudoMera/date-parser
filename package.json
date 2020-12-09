@@ -4,17 +4,22 @@
   "description": "Helper that takes a string or date and returns it in a comprehensive format.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/monisnap-jason/unicorn-says-hello-world.git"
+    "url": "git+https://github.com/PseudoMera/date-parser.git"
   },
   "keywords": [],
   "author": "PseudoMera",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {
+    "date-fns": "^2.16.1"
+  }
 }
