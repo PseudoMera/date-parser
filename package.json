@@ -1,0 +1,20 @@
+{
+  "name": "date-parser",
+  "version": "1.0.0",
+  "description": "Helper that takes a string or date and returns it in a comprehensive format.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monisnap-jason/unicorn-says-hello-world.git"
+  },
+  "keywords": [],
+  "author": "PseudoMera",
+  "license": "ISC",
+  "devDependencies": {}
+}
