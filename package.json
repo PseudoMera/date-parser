@@ -26,7 +26,7 @@
     "parser",
     "typescript"
   ],
-  "author": "Albin Frias - PseudoMera - albinesteban@outlook.com",
+  "author": "PseudoMera",
   "license": "MIT",
   "devDependencies": {
     "prettier": "^2.2.1",
