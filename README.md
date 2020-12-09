@@ -4,26 +4,31 @@ Utility to help you transform your dates into a comprehensive format.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Installing
+```npm i @pseudomera/date-parser```
 
-A step by step series of examples that tell you how to get a development env running
+### How to use it
+1. We import the package
+```import PseudoDateParser from "@pseudomera/date-parser/dist/dateParser"```
+2. We can pass a number, date or a valid date string (e.g an ISO string)
 
-Say what the step will be
-
+    ```const parsedDate = PseudoDateParser(new Date())```
+    ```const parsedNumber = PseudoDateParser(2)```
+    ```const parsedISOString = PseudoDateParser("2007-03-01T13:00:00Z")```
+3. We use our parsed data!
 ```
-Give the example
+    console.log(
+    `${parsedDate.dayOfTheWeek} ${parsedDate.monthNumber} ${parsedDate.month} ${parsedDate.year}`
+    );
+    
+    console.log(
+    `${parsedNumber.dayOfTheWeek} ${parsedNumber.monthNumber} ${parsedNumber.month} ${parsedNumber.year}`
+    );
+    
+    console.log(
+    `${parsedISOString.dayOfTheWeek} ${parsedISOString.monthNumber} ${parsedISOString.month} ${parsedISOString.year}`
+    );
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Built With
 
 * [date-fns](https://date-fns.org/) - Modern Javascript date utility library
@@ -31,7 +36,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Contributing
 
-Not accepting contributions for now.
+Just open a pull request or issue.
 
 ## Versioning
 
