@@ -1,9 +1,14 @@
 {
-  "name": "date-parser",
+  "name": "@pseudomera/date-parser",
   "version": "1.0.0",
   "description": "Helper that takes a string or date and returns it in a comprehensive format.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "homepage": "https://github.com/PseudoMera/date-parser",
+  "bugs": {
+    "url": "https://github.com/PseudoMera/date-parser/issues",
+    "email": "albinesteban@outlook.com"
+  },
   "files": [
     "dist"
   ],
@@ -13,13 +18,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PseudoMera/date-parser.git"
+    "url": "https://github.com/PseudoMera/date-parser"
   },
-  "keywords": [],
-  "author": "PseudoMera",
-  "license": "ISC",
+  "keywords": [
+    "date",
+    "parser",
+    "typescript"
+  ],
+  "author": "Albin Frias - PseudoMera - albinesteban@outlook.com",
+  "license": "MIT",
   "devDependencies": {},
   "dependencies": {
     "date-fns": "^2.16.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/PseudoMera"
   }
 }
