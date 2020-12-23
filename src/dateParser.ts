@@ -10,7 +10,7 @@ function getDateFromString(data: string | number | Date, locale?: Locale | undef
     const month = format(myDate, 'MMMMMMM', { locale: locale });
     const day = format(myDate, 'dd');
     const dayOfTheWeek = format(myDate, 'iiii', { locale: locale });
-    const hour = date.substring(11, 13);
+    const hour = format(myDate, 'HH');
     const minutes = format(myDate, 'mm', { locale: locale });
     const seconds = format(myDate, 'ss', { locale: locale });
     const miliseconds = date.substring(20, 26);
@@ -23,7 +23,7 @@ function getDateFromString(data: string | number | Date, locale?: Locale | undef
       month: month,
       year: year,
       dayOfTheWeek: dayOfTheWeek,
-      hour: format(myDate, 'hh'),
+      hour: hour,
       minutes: minutes,
       seconds: seconds,
       miliseconds: miliseconds,
