@@ -2,7 +2,8 @@ import { format, Locale } from 'date-fns';
 import { PseudoDate } from './date';
 
 function getDateFromString(data: string | number | Date, locale?: Locale | undefined): PseudoDate {
-  const date: string = data.toString();
+  //Note: I made this line in a hurry but I'm almost positive that we don't need to do this.
+  const date: string | number = typeof(data) === 'number' ? data : data.toString();
 
   try {
     const myDate = new Date(date);
@@ -13,7 +14,7 @@ function getDateFromString(data: string | number | Date, locale?: Locale | undef
     const hour = format(myDate, 'HH');
     const minutes = format(myDate, 'mm', { locale: locale });
     const seconds = format(myDate, 'ss', { locale: locale });
-    const miliseconds = date.substring(20, 26);
+    const miliseconds = date.toString().substring(20, 26);
     const amOrPm = hour >= '12' ? 'pm' : 'am';
     const monthNumber = format(myDate, 'MM', { locale: locale });
     const monthShort = format(myDate, 'MMM', { locale: locale });
@@ -34,7 +35,7 @@ function getDateFromString(data: string | number | Date, locale?: Locale | undef
 
     return yourDate;
   } catch (error) {
-    console.error(`getDateFromStrign ERROR: ${error}`);
+    console.error(`getDateFromString ERROR: ${error}`);
     return error;
   }
 }
