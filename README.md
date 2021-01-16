@@ -18,6 +18,9 @@ import PseudoDateParser from "@pseudomera/date-parser/dist/dateParser"
 2. We can pass a number, date or a valid date string (e.g an ISO string)
 
     ```javascript
+    //If you are using unix date format, e.g. 1610814996, It needs to be a number
+    //If you pass it as a string it will fail.
+    const parsedDate = PseudoDateParser(new Date())
 
     const parsedDate = PseudoDateParser(new Date())
 
