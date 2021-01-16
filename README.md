@@ -20,7 +20,7 @@ import PseudoDateParser from "@pseudomera/date-parser/dist/dateParser"
     ```javascript
     //If you are using unix date format, e.g. 1610814996, It needs to be a number
     //If you pass it as a string it will fail.
-    const parsedDate = PseudoDateParser(new Date())
+    const parsedDate = PseudoDateParser(new Date(1610814996))
 
     const parsedDate = PseudoDateParser(new Date())
 
