@@ -1,6 +1,6 @@
 {
   "name": "@pseudomera/date-parser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Helper that takes a string or date and returns it in a comprehensive format.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
